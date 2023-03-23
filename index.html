@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Wordle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <h1>WORDLE</h1>
+    </head> 
+    <body>
+        
+        <div id="refreshButton" onClick="updateGridSize()"><button>Refresh Grid</button></div>
+        <div id="selectors">
+            
+            <label for="colAmt">Letters:</label>
+                <select name="colAmt" id="colAmt" colChoice="5">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected="selected">5</option>
+                    <option value="6">6</option>
+                </select>
+            <label for="rowAmt">Guesses:</label>
+                <select name="rowAmt" id="rowAmt" rowChoice="6 ">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="selected">6</option>
+                </select>
+        </div>
+
+        <div id="game"></div>
+                
+        <script src="main.js"></script>
+    </body>
+</html>
+
